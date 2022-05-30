@@ -1,0 +1,3 @@
+Samostatný příklad IX - simple
+------------------------------
+Vypište všechny dokumenty Excel na disku s velikostí větší než 250kB.

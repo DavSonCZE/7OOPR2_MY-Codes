@@ -1,0 +1,12 @@
+1) Knihovna - class diagram + prototyp implementace
+----------------------------------------------------
+
+Vytvořte diagram tříd a prototyp implementace podle následujícího zadání:
+
+Knihovna má evidenci knih, knihy mají nejméně autora, název, vydavatele a ISBN. Na knihy se dělají výpůjčky, které lze prodlužovat. Výpůjčka vzniká, když si návštěvník knihu vyzvedne a zaniká, když návštěvník knihu vrací. korektně má být výpůjčka vrácena do 31 dnů od vypůjčení. V případě pozdního vrácení vzniká penále, které musí být v systému uloženo pro případné další hodnocení návštěvníka.
+
+Ohledně návštěvníka se eviduje jméno, adresa, telefony, e-mailové kontakty. Systém samozřejmě také umí dohledávat všechny výpůjčky pro daného návštěvníka, všechny výpůjčky dané knihy, všechna penále daného návštěvníka, všechny aktuální výpůjčky a všechny výpůjčky, které jsou po termínu vrácení.
+
+Realizujte v nějakém nástroji diagram tříd (class diagram) dané problematiky. Na základě tohoto diagramu také realizujt jednotlivé třídy, které budou implementovat danou problematiku - POZOR - u funkcí neimplementujte tělo funkce, pouze signaturu (viditelnost, návratovou hodnotu, název a parametry).
+
+Odevzdáváte diagram jako obrázek + samostatné soubory .java jednotlivých tříd (tj. například class diagram v JPG/PNG + 7 .java souborů) zabalené do jednoho souboru ZIP/7Z/TGZ (žádné vložené soubory, ne RAR).

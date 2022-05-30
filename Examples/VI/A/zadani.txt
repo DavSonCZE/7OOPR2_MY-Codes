@@ -1,0 +1,11 @@
+Samostatný příklad VI a - simple
+--------------------------------
+Vygenerujte náhodné pole obsahující 100 čísel (i desetinných) v rozsahu -1000 ... 1000. 
+Vygenerujte metodu, která sečte všechny kladné hodnoty. Vypište z nich průměr.
+Vygenerujte metodu, která sečte všechny záporné hodnoty. Vypište z nich průměr.
+
+Samostatný příklad VI a - extended
+----------------------------------
+Vygenerujte náhodné pole obsahující 800 celých čísel v rozsahu -1milion .. +1milion.
+Vytvořte funkci, která vytvoří dvourozměrné pole. Do prvního rozměru pole se vloží všechny prvky původního pole, které jsou kladné. Do druhého rozměru pole se vloží všechny prvky původního pole, které jsou záporné. Hodnoty 0 vyházejte a nedávejte nikam. Zajistěte samozřejmě, ať žádné z vytvořených polí neobsahuje "nepoužitá" políčka.
+Vypište průměr a směrodatnou odchylku původního pole i nově vytvořených pod-polí.

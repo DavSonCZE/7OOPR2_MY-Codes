@@ -1,0 +1,17 @@
+3) Výpočet mzdy k vyplacení
+-----------------------------
+
+Vytvořte program, který vypočítá a vypíše mzdu k vyplacení.
+
+Uživatel do programu zadá výši hrubé mzdy a výši již vyplacené části mzdy (zálohy) a zda je zaměstnanec student.
+
+Program z hrubé mzdy strhne:
+
+4,5% za zdravotní pojištění
+není-li student), tak 6,5% sociální pojištění
+daň z příjmu: 15% z částky do 30000, 20% z částky nad 30000.
+Od výsledné částky odečte již vyplacenou zálohu a vypíše částku k vyplacení (případně informaci o přeplatku v zálohách) a informace o jednotlivých srážkách (zdravotní/sociální pojištění, daň). Výstup zkuste vzhledně formátovat.
+
+Odevzdáváte samostatné soubory .java jednotlivých tříd (tj. například 7 .java souborů) zabalené do jednoho souboru ZIP/7Z/TGZ (žádné vložené soubory, ne RAR).
+
+Soubor odevzdávejte jako číslo úkolu + _ + vaše studentské číslo např: "2_R15088"

@@ -1,0 +1,12 @@
+Samostatný příklad V - extended:
+--------------------------------
+
+a) Načtěte od uživatele do vhodné instance datum ve formátu den-měsíc-rok.
+
+b) Načtěte od uživatele do vhodné instance datum ve formátu hodina-minuta.
+
+c) Vytvořte novou instanci vhodného formátu den-měsíc-rok-hodina-minuta(-sekunda) sloučením hodnot získaných v bodech a), b).
+
+d) Zjistěte ve letech (desetinné číslo) rozdíl mezi hodnotou v c) a aktuálním dnem. Výsledkem je desetinné číslo (napřiklad 13,748 roku).
+
+e) Vypište hodnotu z c) ve formátu typu "5. března 2017 14:30", 2017-03-05 14:30", "20170305T1430" a "050320171430".

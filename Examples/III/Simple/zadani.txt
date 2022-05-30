@@ -1,0 +1,8 @@
+Samostatný příklad III - simple:
+--------------------------------
+
+a) Vytvořte metodu pro sčítání dvou celých čísel. Vytvořte test, který projde korektně.
+
+b) Vytvořte funkci, který počítá pythagorovu větu. Vytvořte test, který ji zkontroluje.
+
+c) Vytvořte funkci, která spočítá počet kladných čísel v poli. Opět vytvořte test, který ji zkontroluje.

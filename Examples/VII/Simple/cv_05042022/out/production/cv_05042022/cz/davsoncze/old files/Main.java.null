@@ -1,0 +1,75 @@
+package cz.davsoncze;
+
+import java.util.*;
+import java.util.function.BiConsumer;
+
+public class Main {
+
+    public static void main(String[] args) {
+        /*
+        //TODO
+        // 1. projít SET (NEPOUŽÍVÁ SE UŽ MOC, JELIKOŽ NENÍ TO SETŘÍZENENÉ A PŘI VÝPISU JE TO RANDOM)
+        Set<String> set1 = new HashSet<>();
+        set1.add("UNO");
+        set1.add("DUO");
+        set1.add("TRE");
+
+        set1.forEach(el -> System.out.println(el));
+	    // 2. Projít HashMapu
+        // key -> volue
+        //-----------------
+        //vlatnosti: příklad použití npř slovník
+        //výhoda: vylouci duplicity
+        //nevyhoda:
+
+        HashMap<String,String> dictionary = new HashMap<>();
+        dictionary.put("strední skola", "high school");
+        dictionary.put("pes", "dog");
+        dictionary.put("kočka", "cat");
+        dictionary.put("strední skola", "univerzita");
+
+        for(Map.Entry m : dictionary.entrySet()){
+            System.out.println("Key is: " + m.getKey() + " value is: " + m.getValue());
+        }
+
+        /*dictionary.forEach( key, value) ->  ({
+            System.out.println("Key is: " + key + " value is: " + value); //nefunguje
+        })*/
+
+        /*List<Person> p1 = new ArrayList<>();*/
+
+        HashSet<Integer> hashSet1 = new HashSet<>();
+        Random rndPocet = new Random();
+        Random rnd = new Random();
+        for (int i = 0; i < rnd.nextInt(); i++){
+            hashSet1.add(rnd.nextInt(i));
+            System.out.println(rnd);
+        }
+
+
+        /*HashSet<Integer> hashSet1 = new HashSet<>();
+        TreeSet<Integer> treeSet1 = new TreeSet<>();
+        LinkedList<Integer> linkedList1 = new LinkedList<>();*/
+
+        /*private static void GenerateNumbersToHash(int a){};
+
+
+        /private static void HashSet<> GenerateNumbersToHash() {
+            HashSet<Integer> hashSet1 = new HashSet<>();
+            Random rndPocet = new Random();
+            Random rnd = new Random();
+            for (int i = 0; i < rnd.nextInt(); i++){
+                hashSet1.add(rnd.nextInt());
+                System.out.println(hashSet1.stream());
+            }
+            }*/
+
+            /*VII simple
+                Samostatný příklad VII - simple
+                 Vygenerujte hashSet, TreeSet, ArrayList a LinkedList o velkém počtu náhodných čísel (počet vhodně zvolte). U každého generování vypište čas tvorby všech prvků a nakonec vypište průměr všech nagenerovaných hodnot v daném objektu. Zamyslete se nad hodnotou průměru - je to také náhodné číslo? Co pro něj platí?
+
+                    Vypište prvky ze všech 4 objektů ve vzrůstajícím pořadí.
+            VII extende udělat*/
+
+        }
+    }

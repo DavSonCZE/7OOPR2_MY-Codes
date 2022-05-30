@@ -1,0 +1,21 @@
+package cz.davsoncze;
+
+import java.util.ArrayList;
+
+public class DistincList extends ArrayList {
+    @Override
+    public boolean add(Object o) {
+        if(this.contains(o)){
+            return false;
+        }
+        else
+            return super.add(o);
+    }
+
+    @Override
+    public void add(int index, Object element) {
+        if(this.contains(o))
+        super.add(index, element);
+
+    }
+}

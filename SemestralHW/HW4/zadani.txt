@@ -1,0 +1,14 @@
+4) Unitový test na "Výpočet mzdy k vyplacení"
+---------------------------------------------
+
+Vytvořte unitové testy, které testují funkcionalitu z předchozího úkolu 3).
+
+Pokud jste vše v minulém úkolu dali pouze do funkce "main()", nyní to vhodně rozdělte na samostatně volatelné funkce. Napište unitové testy, které otestují vaše funkce. Otestujte všechny smysluplné varianty, které Vás napadnou. Měli byste tedy mít metodu a) na výpočet zdravotního pojištění; b) na výpočet sociálního pojištění; c) na výpočet daně (viz příklad níže).  Netestujte vstupy od uživatele.
+
+Odevzdáváte samostatné soubory .java jednotlivých tříd (tj. například 7 .java souborů) zabalené do jednoho souboru ZIP/7Z/TGZ (žádné vložené soubory, ne RAR). Odevzdávate jak stejné soubory jako minule (včetně případných změn, bylo-li nyní třeba), tak soubory s testy.
+
+Příklad výpočtu:
+
+Hrubá mzda 54321,--. Záloha 20000,--. Zdravotní 2444,45. Sociální - student 0,--, zaměstnanec 3530,87. Daň z příjmu - z částky do 30000,-- je to 4500,--,  z částky přesahující 30000,-- je to 4864,20, celkem daň 9364,20. K výplatě tedy jde studentovi 22512,35, zaměstnanci 18981,48.
+
+Soubor odevzdávejte jako číslo úkolu + _ + vaše studentské číslo např: "2_R15088"

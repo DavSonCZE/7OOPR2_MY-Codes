@@ -1,0 +1,2 @@
+Vytvořte program, který načte text ze zadaného souboru. Do cílového souboru se namísto slov v původním souboru zapíší
+ pouze cifry určující počet písmen daného slova.

@@ -1,0 +1,23 @@
+Samostatný příklad VII - simple
+-------------------------------
+Vygenerujte hashSet, TreeSet, ArrayList a LinkedList o velkém počtu náhodných čísel (počet vhodně zvolte).
+U každého generování vypište čas tvorby všech prvků a nakonec vypište průměr všech nagenerovaných hodnot v daném objektu.
+Zamyslete se nad hodnotou průměru - je to také náhodné číslo? Co pro něj platí?
+
+Vypište prvky ze všech 4 objektů ve vzrůstajícím pořadí.
+
+Samostatný příklad VII - extended
+---------------------------------
+1) Vytvořte třídu Contact, kde každá osoba má jméno a několik e-mailů. Maily u stejné osoby se nesmí opakovat.
+    Ověřte unitovým testem.
+
+2) Přidejte ke třídě Contact možnost, že každá osoba má až 5 (ale ne více) telefonních čísel. Ověřte unitovým testem.
+
+3) Vytvořte třídu ContactList, která vede evidenci kontaktů.
+
+4) Vytvořte v ContactList metodu, která nalezne osobu podle jejího zadaného e-mailu. Vytvořte 2 varianty této metody
+        - první varianta vrátí první nalezenou osobu s emailem (nebo null),
+        druhá metoda vrátí všechny osoby, které používají daný e-mail. Obě varianty ověřte unitovým testem.
+
+V metodě main() vytvořte list kontaktů, naplňte jej několika osobami a vypište postupně u každé osoby všechny informace
+v přehledném formátu na konzolový výstup (System.out).

@@ -1,0 +1,15 @@
+Samostatný příklad VI b - simple
+----------------------------------
+1) Vytvořte třídu Person definující jméno, příjmení a věk uživatele. Realizujte nativní řazení třídy Person podle příjmení, při shodě příjmení podle jména.
+
+2) Vytvořte list čísel a seřaďte ho sestupně(!)
+
+Samostatný příklad VI b - extended
+----------------------------------
+1) Vytvořte třídu Person definující jméno, příjmení a věk uživatele (stejné jako v Simple verzi úkolu).
+
+1a) Vytvořte vlastní porovnávač, který bude řadit nejdříve podle příjmení, při shodě podle jména, při shodě podle věku. Dejte si pozor na korektní řazení českých znaků (Čečeška, Žába, Ďuricová, atd.). Upravte jej, ať si může programátor zvolit, zda se má řadit vzestupně nebo sestupně.
+
+1b) Vytvořte vlastní porovnávač, který bude řadit podle věku od nejstarší osoby po nejmladší. Osoby, které věk nemají zadán (je null) budou vždy na konci seznamu.
+
+U obou funkcionalit demonstrujte chování v metodě main().

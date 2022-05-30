@@ -1,0 +1,8 @@
+Samostatný příklad IV - simple:
+-------------------------------
+
+a) Vytvořte třídu Person tak, že věk osoby je volitelný údaj a nemusí být zadán.
+
+b) Vytvořte funkci, která rozdělí zadané telefonní číslo na trojice. Otestujte pomocí unitového testování.
+
+c) Vytvořte funkci, která otestuje, zda je v zadaném řetězci udaný znak. Otestujte pomocí unitového testování.

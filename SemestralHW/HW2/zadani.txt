@@ -1,0 +1,14 @@
+2) Filtrování hráčů - dědičnost
+-------------------------------
+
+Vytvořte diagram tříd a prototyp implementace podle následujícího zadání - filtrování hráčů podle podmínky.
+
+V přiloženém diagramu vidíte základní schéma. Vytvořte odpovídající třídy. Následně implementujte filtrování s využitím dědičnosti tak, abyste dosáhli univerzálního chování.
+
+Ve třídě FilteringManager implementujte funkci (funkce, je-li jich třeba dle vašeho názoru více) na filtrování vstupního pole hráčů. Do funkce vstupuje pole hráčů (ošetřete vstupní chyby!) a filtr, podle kterého se má filtrovat. Funkce profiltruje hráče a vrátí pouze ty, kteří splňují filtrační podmínku, a to ve formě nového pole (neměníte původn pole).
+
+Řešení vytvořte tak, aby bylo co nejvíce univerzální. Implementujte nejméně 4 druhy filtrů - například "obsahuje ve jméně", ... "je starší než", atp.
+
+Odevzdáváte samostatné soubory .java jednotlivých tříd (tj. například 7 .java souborů) zabalené do jednoho souboru ZIP/7Z/TGZ (žádné vložené soubory, ne RAR).
+
+Soubor odevzdávejte jako číslo úkolu + _ + vaše studentské číslo např: "2_R15088"

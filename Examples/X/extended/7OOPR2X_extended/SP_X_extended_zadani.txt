@@ -1,0 +1,2 @@
+Vytvořte program, který načte textový soubor. Program rozpozná jednotlivá slova a počet jejich výskytů.
+Dvojice (slovo-počet výskytů) seřadí podle počtu výskytů sestupně a postupně dvojice zapíše po řádcích do výstupního souboru.

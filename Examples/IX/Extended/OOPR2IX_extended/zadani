@@ -1,0 +1,12 @@
+Vytvořte metodu, která najde na disku všechny soubory s jednou ze zadaných přípon (může jich tedy být  zadáno více než
+jedna) a zkopíruje je na dané cílové umístění.
+
+Realizujte funkci třemi způsoby:
+--------------------------------
+a) jednoduchým for-each cyklem nad prvky nalezenými ve složce přes "listFiles()" funkci
+b) jednoduchým for-each cyklem nad prvky nalezenými ve složce pres "listFiles(FileNameFilter...)" funkci
+c) implementací pomocí třídy SimpleFileVisitor.
+
+----
+
+Vypište všechny kořenové složky počítače (tj. disky) a u každé vypište počet všech složek, které na ní jsou.

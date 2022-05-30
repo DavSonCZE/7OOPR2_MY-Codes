@@ -1,0 +1,10 @@
+Samostatný příklad III - extended:
+----------------------------------
+
+a) Vytvořte funkci "signum" ( https://cs.wikipedia.org/wiki/Funkce_signum ). Vytvořte test, který zkontroluje její chování pro všechny 3 varianty.
+
+b) Vytvořte funkci, která spočítá průměr pole a následně z daného pole spočítá odchylku jednotlivých položek od průměru. Vytvořte test, který ověří obě funkcionality.
+
+c) Vytvořte funkci realizující výpočet Fibonacciho posloupnosti pro "n" prvků. Vytvořte test, který metodu otestuje.
+
+d) Vytvořte funkci, která počítá řešení kvadratické rovnice. Vytvořte test, který metodu otestuje - nezapomeňte na všechny možné případy vstupů/výstupů.

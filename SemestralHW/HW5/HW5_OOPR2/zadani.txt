@@ -1,0 +1,40 @@
+Implementujte následující úkol - evidenci výsledků závodů.
+
+Vytvořte třídu, která bude realizovat správce závodů.
+Každý závod je identifikován svým název (jako klíčem), a obsahuje sadu záznamů výsledků. Každý výsledek obsahuje informaci o závodníkovi (tj. jméno)
+ a dosaženém času (klidně stačí v sekundách/milisekundách, ale je třeba jej zobrazovat "hezky" jako čas). Výsledky závodu nemusí být seřazeny ihned,
+ ale musí být seřazeny, když se vypisují (nižší čas = dřívější výsledek). Zajistěte, aby výsledek závodu nemohl být nikdy null (demonstrujte unit-testem),
+  nebo obsahovat prázdná data (prázdné/null jméno závodníka, záporný nebo nulový čas) (- opět demonstrujte unit testem).
+  Chybná data vyhazují výjimku "IllegalArgumentException" se smysluplným textem. Null hodnota vyhazuje výjimku NullArgumentException se smysluplným textem.
+
+V metodě "main()" demonstrujte použití a výpis dat. Například:
+
+Monaco 1993
+
+1. Alain Prost        1:20.557
+2. Michael Schumacher    1:21.190
+3. Ayrton Senna        1:21.552
+4. Damon Hill        1:21.825
+5. Jean Alesi        1:21.948
+6. Riccardo Patrese    1:22.117
+7. Gerhard Berger        1:22.394
+8. Karl Wendlinger        1:22.477
+9. Michael Andretti    1:22.994
+10. Érik Comas        1:23.246
+
+Monaco 2019
+
+1. Lewis Hamilton        1:10.166
+2. Valtteri Bottas        1:10.252
+3. Max Verstappen        1:10.641
+4. Sebastian Vettel    1:10.947
+5. Pierre Gasly        1:11.041
+6. Kevin Magnussen        1:11.109
+7. Daniel Ricciardo    1:11.218
+8. Daniil Kvyat        1:11.271
+9. Carlos Sainz Jr.    1:11.417
+10. Alexander Albon        1:11.653
+
+====
+
+

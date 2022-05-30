@@ -1,0 +1,10 @@
+Samostatný příklad V - simple:
+-------------------------------
+
+a) Vytvořte instanci třídy reprezentující den-měsíc-rok. Nastavte jej na vaše datum narození a vypište jej na konzoli.
+
+b) Vytvořte instanci třídy reprezentující den-měsíc-rok nastavené na aktuální datum. Vypište jej na konzoli.
+
+c) Instanci z předchozího bodu změňte rok na rok 2000. Vypište.
+
+d) Instanci celou přepracujte na štědrý den roku 1999. Výsledek vypište.

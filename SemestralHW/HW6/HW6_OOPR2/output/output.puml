@@ -1,0 +1,24 @@
+@startuml
+package eng.task {
+interface Parseable 
+{
++parse(param : String) : void
+}
+interface Formatable 
+{
++format() : String
+}
+class Id 
+{
+-id : int
++getId() : int
+}
+class Record extends Id implements Parseable, Formatable 
+{
++format() : String
++parse(param : String) : void
++updateId(newId : int) : void
++updateId(newId : int, forceUpdate : boolean) : void
+}
+}
+@enduml
