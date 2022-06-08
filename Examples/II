@@ -1,0 +1,95 @@
+Rozhraní se definuje pomocí klíčového slova => interface
+Abstraktní třída se vytvoří pomocí klíčového slova => abstract
+Označte pravdivá tvrzení o konstruktoru => může být privátní, může volat konstruktor třídy-předka
+Označte pravdivá tvrzení pro statickou třídu X => Tato konstrukce v jazyce Java neexistuje.
+Označte pravdivá tvrzení pro abstraktní třídu X => Lze volat metody u proměnné typu X, Lze vytvořit třídu, která bude potomkem/implementací X
+Označte pravdivá tvrzení pro finální třídu X => Od X lze vytvořit instanci, Lze volat metody u proměnné typu X
+Pro vytvoření objektu používáme => klíčové slovo "new" a volání konstruktoru.
+Klíčové slovo "static" se používá k => definování metod a proměnných, které patří přímo třídě a jsou společné pro všechny instance této třídy.
+Klíčové slovo "this" se používá k => v metodě k odkazování na objekt, ze kterého je aktuální metoda volána
+Pro odstranění objektu z paměti používáme => odstranění odkazů na daný objekt; ten je poté předán ke zrušení garbage collectoru
+Jak se předávají primitivní typy (ne objekty) jako parametry při volání metod (v Javě 6)? => lze hodnotou i referencí
+Tzv. gettery a settery se používají k => zapouzdření nastavení a získání hodnoty ze soukromé proměnné třídy.
+Při volání konstruktoru se objevuje klíčové slovo ? => new
+Jak se předávají objekty (ne primitivní typy) jako parametry při volání metod? => pouze referencí
+Modifikátor "chráněný" se vytváří klíčovým slovem => protected
+Modifikátor "soukromý" se vytváří klíčovým slovem => private
+Modifikátor "veřejný" se vytváří klíčovým slovem => public
+
+Co je to testy řízený vývoj: => technika vývoje softwaru, kdy se nejdříve vytvoří test, a teprve poté se vytváří vlastní testovaný kód.
+Co je to funkční test? => Test ověřující funcionalitu modulů aplikace..
+Co je to unitový test? => Test ověřující funkcionalitu funkčně jednoduchého bloku.
+Co je to integrační test? => Test ověřující funkcionalitu výsledné aplikace jako celku.
+Jedním z frameworků, který se používá pro TDD v Javě, je: => JUnit
+Správný postup při vývoji pomocí TDD je: => Vytvořit test, zběžně naimplementovat požadovanou funkcionalitu, po ověření testem ji pomocí refaktoringu upravit do výsledné formy..
+Testovací metody v JUnit mají prefix: => test
+Identifikátor používající se při testování v JUnit pro ohodnocení shodnosti/korektnosti výsledku je: => assert
+Co je cílem refaktorování? => Vytvořit co nejčistější a nejpřehlednější funkční kód, Odstranění duplicit
+
+Správné operace s řetězce realizují výrazy: => String s = "Dobrý " + "den.";, boolean shodné = s.equals("Dobrý den");
+Seřaďte následující typy podle velikosti od největšího do nejmenšího rozsahu: => double, float, long, int, short, byte.
+Jaký je význam existence třídy StringBuilder? => Umožňuje měnit proměnnou s řetězcem, aniž by se pro každou změnu musela vytvářet nová instance., Umožňuje vytvořit dlouhý řetězec pomocí skládání jednotlivých částí metodou append.
+Které z následujících dvojic hodnot čísel a datových typů si odpovídají? => 170 - int, 170L - long, 84.455f – float
+Vyberte pravdivá tvrzení o referenčních datových typech: => Lze je předat referencí, Mohou nabývat hodnotu NULL, Dědí z obecného typu Object.
+Nejvyšším datovým typem v hierarchii objektů v Javě je: => Object
+Vyberte pravdivá tvrzení o primitivních typech => Nepatří do objektové hierarchie typů, Předávají se hodnotou, Pomocí wrapovacích typů je lze používat jako typy referenční
+Označte pravdivé výroky ohledně metody toString(): => Metoda je definována v datovém typu Object., Metoda se používá pro získání hodnoty objektu transformovaného na řetězec., Existuje primitivní typ, který nemá metodu toString()
+Vyberte správné přiřazení řetězce do proměnné: => String s = "Toto";, String s = new String("Toto");, String s = new String();
+
+K čemu slouží wrappery pro primitivní typy? => Zapouzdřují primitivní typ do třídy, aby jej šlo použít jako referenční typ..
+
+Korektní metody, které lze volat nad kolekcí typu "ArrayList" jsou: => kol.add(4);, kol.set(5,3);, kol.get(3);
+
+Který z následujících příkazů vytvoří jednorozměrné pole o deseti prvcích s indexy 0-9? => int x = new int[10];.
+
+Jaká je výhoda použití generických typových kolekcí (např. List) oproti kolekcím klasickým? => Zamezují programátorským chybám způsobeným použitím špatného datového typu, Jejich metody pracují s generickým typem
+
+Korektní syntaxe pro vytvoření proměnné pro reprezentaci matice 3x3 bude: => int [][] mat = new int [3][3];
+Pro seřazení pole "x" použijeme výraz: => Arrays.sort(x);
+Chci udržovat sadu 5 prvků, které dále nebudu rozšiřovat, ale budu chtít měnit jejich hodnoty. Použiji nejlépe: => Pole
+Chci udržovat sadu prvků, kde každý prvek bude pouze jednou. Použiji nejlépe: => Množinu
+Chci udržovat sadu prvků, která je reprezentována klíčem a k němu příslušející hodnotou. Použiji nejlépe: => Mapu / Množinu
+Chci udržovat sadu prvků, do které chci prvky přidávat a chci později měnit jejich hodnoty. Použiji nejlépe: => List.
+
+Korektní syntaxe pro získání hodnoty z proměnné deklarované pomocí výrazu "int [] x = new int [10]" je: => int i = x[9];, int i = x[0];, int i = x[1];
+Pro průchod přes desetiprvkové pole v Javě použijeme cyklus: => for (int i = 0; i .<. 10; i++).
+Korektní syntaxe pro definici 5-prvkového pole s indexy od 2 do 6 je: => takové pole nelze v Javě vytvořit.
+Pro vyhledání hodnoty 4 v poli "x" použijeme výraz: => int index = Arrays.binarySearch(x, 4); // pole musí být předem seřazeno.
+Jaké jsou vlastnosti kolekce vytvořené pomocí "List kol = new ArrayList()": => Kolekce je přísně typová nad typem "Integer", Kolekce může držet proměnlivý počet prvků, lze je dynamicky přidávat.
+Který z následujících příkazů získá 4. prvek pole x? => int a = x[3];.
+
+Která z následujících definic není syntaktický správně (předpokládáme, že všechny potřebné datové typy existují)? => public class A.
+Který z následujících řádků uvozuje generickou třídu X: => public class X.
+Zatrhněte dvojici deklarací, které po kompilaci zahlásí chybu upozorňující na opakovaný výskyt stejné metody se stejnou signaturou: => public void add(List data), public void add(List data)
+Které z následujících písmen označuje generický typ v deklaraci "public class A extends C" => A
+U kterých následujících výrazových prvků jazyka lze běžnou deklaraci rozšířit na generickou? => Metoda, Třída
+Zatrhněte dvojici deklarací, které po kompilaci zahlásí chybu upozorňující na opakovaný výskyt stejné metody se stejnou signaturou: -> => public void add(List data), public void add(List data)
+
+Co je charakteristické pro systémovou výjimku, vyvolávanou v okamžiku fatální chyby ve virtuálním stroji Javy? => Je potomkem třídy RuntimeException, Je potomkem třídy Error, Nemusí se zachytávat blokem try-catch-finally
+Pro uvození bloku, který se provede vždy, ať už výjimka vznikla či nikoliv, se používá klíčové slovo: => finally.
+Které z následujících výjimek jsou nekontrolované? => Dělení nulou., Index mimo rozsah pole/kolekce., Vyvolání metody nad proměnnou s hodnotou null.
+Který z následujících výrazů je korektní vyvolání výjimky? => throw new Exception ("Chyba.");.
+Který z následujících výrazů je korektní úvod bloku pro zachycení výjimky? => catch (Exception ex).
+Která klíčová slova se používají při vyvolání výjimky: => throw
+Co znamená, že výjimky jsou "kontrolované": => že klienský kód musí výjimku buď ošetřit, nebo ji propagovat.
+Která klíčová slova se používají při uvození bloků používaných pro zachycení výjimky: => try, catch, finally
+Kolikrát můžeme použít podblok "catch" v sekvenci try-catch-finally? => Libovolněkrát.
+Kolikrát můžeme použít podblok "try" v sekvenci try-catch-finally? => 1x
+Pro uvození bloku, který bude zachytávat případnou výjimku, se používá klíčové slovo: => catch
+Kolikrát můžeme použít podblok "finally" v sekvenci try-catch-finally? => 0x - 1x
+Pro vyvolání výjimky se používá klíčové slovo: => throw
+Co znamená, že výjimky jsou "řetězené": => že lze do nové instance výjimky vložit již existující instanci jiné výjimky
+Pro uvození bloku, který zkusí provést zadané příkazy, se používá klíčové slovo: => try
+
+Základní třídou reprezentující určitý objekt na disku, je třída "java.io.File". Pokud vytvoříme instanci předáním určité cesty (např. C:\windows\windows.ini), musí tento objekt existovat? => ne
+Základní třídou reprezentující určitý objekt na disku, je třída "java.io.File". Instance této třídy reprezentuje: => Složku, Soubor
+Jakým způsobem řeší jazyk Java práci s odlišnými souborovými systémy různých operačních systémů? => Vše zapouzdřuje do jedné knihovny umožňující pracovat s libovolnými souborovými systémy.
+Třídy pro práci se soubory a souborovým systémem lze nalézt v balíčku: => java.nio, java.io
+
+Výjimky při práci se streamy: => -> Je třeba zachytávat, typicky operace vyhazují java.io.IOException..
+Technika, která umožňuje automatizovaně ukládat instanci třídy do proudu dat, se nazývá: => Serializace
+Vstupní textový proud pro RAR dekompresi textu bude nejlépe charakterizován třídou: => RarReader
+Výstupní bytový proud pro RAR kompresi datových souborů bude nejlépe charakterizován třídou: => RarOutputStream
+V Javě se se soubory pracuje pomocí tzv. streamů. Tyto streamy lze (v javě typicky) dělit do kategorií na: => Bytové a textové, Vstupní a výstupní
+Základní operace při práci se streamy lze provádět v pořadí: => Otevření, načtení do lokální proměnné, uzavření, zpracování z lokální proměnné, Otevření, načtení do lokální proměnné, zpracování z lokální proměnné, uzavření
+Co je charakteristické pro filtrový (filtrovací) stream? => Zapouzdřuje jiný stream..
