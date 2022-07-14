@@ -1,7 +1,35 @@
-	              |  LIST	 |   SET
-++++++++++++++++++++++++++++++++++
-Duplicates      |  ANO   |   NE
-++++++++++++++++++++++++++++++++++
-Pořadí          | Řazené |   Záleží na implementaci
-+++++++++++++++++++++++++++++++++++++++++++++++++
-Poziční přístup | Ano    |   NE 
+3) Datový typ Object
+-----------------
+ Každá třída dědí ze třídy Object, i pokud nemá žádnou dědičnost specifikovánu programátorem.
+  toString() ->  reprezentovat instanci jako řetězec, vykoná se tato metoda a vrátí se její výsledek.
+  equals() -> porovnání řetězců
+  hashCode() -> a) kod je odlišný -> objekty nutně musí být odlišné (při porovnání metodou equals()) => nesmí vrátit ttrue
+  		b) kód pro dva objekty shodný, objekty mohou být (ale nemusí!) shodné (při porovnání metodou equals()) => nutně nemusí při volání metody equals() vrátit hodnotu true.
+
+5) StringBuilder
+--------------
+ Umožňuje změnu již vytvořené hodnoty řetězce, což klasický String (neumí to).
+ !!!! Nelze například řetězit dohromady pomocí operátoru „+“. !!!!
+ 	
+	Operace:
+		.appends(String s)  -> přidání na konec
+		.insert(int offset, String s) -> vložení na daný offset
+		.insert(int offset, String s) -> vložení na daný offset
+		.delete(int start, int end) -> Smaže znaky od indexu start do indexu end
+		.reverse() -> Otočí pořadí znaků v řetězci.
+		.replace(int start, int end, String s) -> Vyjme řetězec mezi indexy start (včetně) a end (nevčetně) a vloží místo vyjmutého obsahu zadaný řetězec s.
+
+7 Pole a kolekce
+----------------
+ 
+		
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++		|  LIST	 |   SET			+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Duplicates      |  ANO   |   NE			+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Pořadí          | Řazené |   Záleží na implementaci	+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Poziční přístup | Ano    |   NE 			+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
