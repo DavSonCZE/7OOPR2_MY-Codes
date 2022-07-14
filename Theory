@@ -21,15 +21,164 @@
 
 7 Pole a kolekce
 ----------------
+	
+	A) POLE = zákl. mechanizmus k udržení hodnot s pevně danou velikostí
+		I) tvorba pole
+			int[] data = null;
+			data = new int[5];
+			int [] otherData = new int[] { 1, 10, 100, 1000, 10000 };
+			
+		II) přistup k poli
+			podle indexů (začíná se od 0 !)
+				for (int i = 0; i < data.length; i++) {
+					 hodnota = data[i];
+ 						System.out.println(hodnota)
+				}
+		III) operace s poli
+			copyOf() – metoda pro kopírování položek jednoho pole do druhého;
+			fill() – metoda pro vyplnění prvků pole určitou hodnotou;
+			sort() – metoda pro seřazení prvků pole;
+			equals() – důležitá metoda pro porovnávání polí. 
+			binarySearch() - metoda pro vyhledání prvku v poli. (PŘED VOLÁNÍM SEŘAZENo)
+			toString() – metoda vypíše přehledně všechny prvky pole.
+	
+	B) Java Collection Framework
+			Kolekce – jsou typy určené pro udržení skupiny hodnot v tzv. kolekci. Do kolekce lze 
+					typicky prvky přidávat, odebírat a postupně je procházet
+			
+			Mapy – jsou typy určené pro reprezentaci dvojic hodnot. Neobsahují tedy samotné 
+					hodnoty, ale vždy dvojice hodnot – klíč a jemu odpovídající hodnotu.
+					
+			Rozdělení kolekcí:
+				a) Potomci/implementace třídy Set – reprezentují množiny
+				b) Potomci/implementace třídy List – reprezentují seznamy.
+				
+				+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+				+		|  LIST	 |   SET			+
+				+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+				+ Duplicates      |  ANO   |   NE			+
+				+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+				+ Pořadí          | Řazené |   Záleží na implementaci	+
+				+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+				+ Poziční přístup | Ano    |   NE 			+
+				+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+			
+		B1) Množiny :
+			Lze do nich také přidávat prvky, 
+			odebírat prvky a procházet je pomocí cyklu for-each, na rozdíl od seznamu ale má odlišné chování, 
+			na které je třeba pamatovat:
+				Nelze vložit hodnotu null.
+				Každá hodnota může být v množině pouze jednou.
+				Prvky nemusí být v pořadí, ve kterém byly do množiny vloženy24
+				Na jednotlivé prvky se nelze dostat pomocí indexu a nelze tedy ani použít cyklus for.
+				
+				Operace HaxhSet
+				.dd(E e) -> Vloží do množiny prvek. Pokud již prvek v množině existuje, nic se neprovede.
+				.clear() -> Odstraní všechny prvky z množiny.
+				.contains(Object o) -> Vrací true, pokud prvek předaný jako parametr v množině existuje
+				.isEmpty() -> Vrací true, pokud je množina prázdná.
+				.remove(Object o) -> Odstraní prvek z množiny
+				
+				Existují dvě základní implementace pro množiny:
+					HashSet – základní množina udržující prvky v nějakém nedeterministickém pořadí;
+					TreeSet – množina udržující prvky seřazené podle velikosti
+					
+					
+					B1A) HashSet :
+						 chceme zajistit, že každý prvek se vyskytuje v množině pouze jednou, použijeme právě HashSet.
+						 
+					B1B) TreeSet :
+						 V této množině platí, že jednotlivé vložené prvky jsou vždy seřazeny25 vzestupně. Tento typ množiny tedy 
+						 vždy zachovává pořadí prvků podle velikosti, jak stručně představuje jen velmi mírně upravený výpis.
+						 
+				
+				Nativní porovnávání instancí tříd – Comparable:
+					implements Comparable<Person>
+				
+					Int compareTo (E other).
+						 Hodnotu menší než 0 – pokud je aktuální objekt menší než objekt předaný jako parametr;
+						 Hodnotu rovnu 0 – pokud jsou oba objekty shodné;
+						 Hodnotu větší než 0 – pokud je aktuální objekt větší než objekt předaný jako parametr.
+						
+						@Override
+ 						public int compare(Person o1, Person o2) {
+						 if (o1.getAge() < o2.getAge()) {
+						 return -1;
+ 						} else if (o1.getAge() == o2.getAge()) {
+ 						return 0;
+ 						} else {
+ 						return 1;
+ 						}
+
+			
+				
+				java.util.List: (Arraylist):
+				-----------------------------
+				
+					 binarySearch() – pro vyhledání indexu určitého prvku v seznamu prvků. Pozor, jedná se 
+							(už podle názvu) o vyhledávání binární a proto musí být seznam nejdříve setřízen (pomocí 
+							metody sort());
+					 copy() – zkopíruje všechny prvky z jednoho seznamu do seznamu druhého;
+					 max() – vrací největší prvek seznamu podle nativního řazení (kapitola 7.2.4);
+					 min() – vrací nejmenší prvek seznamu podle nativního řazení;
+					 replaceAll() – nahradí v seznamu všechny výskyty určitého prvku prvkem jiným;
+					 reverse() – otočí pořadí prvků v seznamu;
+					 shuffle() – náhodně zpřehazuje prvky v seznamu;
+					 sort() – setřídí seznam podle parametrů (ukázka použití viz kapitola 7.2.6);
+					 swap() – přehodí prvky na dvou indexech.
+					
+					Collections.sort(jmeno listu).
+					
+					Collections.reverse(lst); //nejvetsi nejmensi
+					
+					
+		Mapy:
+			Cílem map je propojit (namapovat) k určitému klíči určitou hodnotu. Cílem map je propojit (namapovat) k určitému klíči určitou hodnotu. 
+			   => tváří uspořádanou dvojici hodnot <key, value>
+			   
+			   Podle implementace (analogicky k množinám) lze použít v Javě dvě základní třídy pro reprezentaci map:
+			   
+			    HashMap – kde se pro přístup a vyhledávání přes klíče používá hashe (srovnej s HashSet, 
+					včetně výhod z toho vyplývajících); používá se tedy v případech, kdy do mapy 
+					potřebujeme rychle přidávat či editovat hodnoty, nebo rychle v mapě vyhledávat podle klíče;
+			 TreeMap – kde jsou klíče vždy seřazeny podle přirozeného řazení (srovnej s TreeSet, 
+					včetně výhod z toho vyplývajících); používá se v případech, kdy potřebujeme, aby byly 
+					klíče v mapě seřazeny podle nativního řazení
+					
+			Při práci s mapami se typicky využívají základní metody:
+				 put() – pro vložení páru; funkce má jako argumenty dvě hodnoty – klíč a hodnotu. Pokud 
+						klíč neexistuje, bude do mapy vložen s hodnotou. Pokud již klíč v mapě existuje, původní 
+						hodnota klíče se nahradí hodnotou novou;
+				 get() – pro získání hodnoty odpovídajícího klíče. Funkce má jako argument hodnotu klíče. 
+						Pokud klíč neexistuje, vyhodí běhové prostředí chybu;
+				 size() – pro získání počtu vložených párů do mapy;
+				 clear() – pro smazání obsahu mapy;
+				 keySet() – pro získání všech klíčů ve formě množiny.
+				
+		Exception:
+			try{
+ 				// prikazy, ktere mohou vyvolat vyjimku
+ 			}
+ 			catch (Exception ex){
+ 				// zachyceni vyjimky a zpracovani
+ 				// informace o chybe jsou v promenne "ex"
+ 			}
+ 			finally {
+ 			// nepovinny blok, ktery se provede vzdy po bloku try nebo catch
+ 			}
+
+
+			   	
+		
+
+				
+				
+
+
+
+				
+		
  
 		
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+		|  LIST	 |   SET			+
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ Duplicates      |  ANO   |   NE			+
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ Pořadí          | Řazené |   Záleží na implementaci	+
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ Poziční přístup | Ano    |   NE 			+
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
