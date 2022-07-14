@@ -3,6 +3,13 @@
 EXMAPLES:
 ----------
 
+II : SIMPLE
+-----------
+       Vytvořte třídu pro reprezentování rychlosti Speed.  Zajistěte, aby existoval způsob, jak nějak nastavit rychlost a jak ji získat z instance této třídy.
+       Vytvořte třídu Vehicle reprezentující obecný dopravní prostředek. Zajistěte, aby každý dopravní prostředek měl svou udanou rychlost.
+       Vytvořte třídu Car jako potomka třídy Vehicle. Vytvořte mu vlastnost pro SPZ (PlateNumber). Zvolte vhodný datový typ.
+       Vytvořte třídu Plane jako potomka třídy Vehicle. Vytvořte mu vlastnost pro číslo registrace (5-8 písmenný kód obsahující velká písmena a cifry) - TailNumber.
+
 III : SIMPLE
 ------------
       a) Vytvořte metodu pro sčítání dvou celých čísel. Vytvořte test, který projde korektně.
