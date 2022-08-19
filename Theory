@@ -166,6 +166,48 @@
  			finally {
  			// nepovinny blok, ktery se provede vzdy po bloku try nebo catch
  			}
+			
+			
+			//////////////////////////////////////////////////////////////
+			
+			
+			1. Rozhraní:
+				Collection<E>
+					• nejobecnější rozhraní kolekcí objektů
+					• společný předek, slouží i k předávání kolekcí
+					• zajištěn polymorfismus
+				List<E>
+					• indexovaná sbírka objektů označovaná jako sekvence – „seznamy“
+					• pořadí prvků je významné
+					• je možné indexovat
+					• duplicita prvků povolena
+				Set<E> (SortedSet <E>)
+					• reprezentace množiny, sbírka unikátních objektů (příp. uspořádaná)
+					• nelze indexovat – pomocné indexování jen pomocí tzv. iterátorů
+				Map<K,V> (SortedMap <K,V>)
+					• sbírka dvojic (zobrazení) objektů, mapuje klíč na hodnoty
+					• mapuje „key  (jedinou) value“ (příp. uspořádaná)
+					• neobsahuje duplicitní klíče
+				Queue<E>
+				• fronta ( FIFO )
+				-----
+				Comparator<T>, java.lang.Comparable - pro porovnávání objektů
+				Iterator<E>, ListIterator<E>, RandomAccess - přístup k prvkům
+				
+				2. Třídy implementující Collection:
+					ArrayList – „pole proměnné délky“,
+					LinkedList – „spojový seznam“
+					HashSet, LinkedHashSet – „reprezentace množiny“
+					HashMap, LinkedHashMap – „mapa, klíč~hodnota“
+					TreeSet – „seřazená množina“
+					TreeMap – „seřazená mapa“
+				
+				3. Algoritmy
+				pro řazení, přesouvání, doplňování, kopírování a vyhledávání
+				• Další třídy
+					Arrays, Collections – „lepší pole“
+					Vector, Stack, Hashtable, Properties
+					PriorityQueue, ArrayDeque
 
 
 			   	
