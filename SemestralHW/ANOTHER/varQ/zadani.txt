@@ -1,0 +1,8 @@
+Rychlý úkol Q
+Vytvořte třídu Point, která reprezentuje bod pomocí dvou souřadnic (x, y).
+
+Vytvořte třídu Vector, která reprezentuje vektor pomocí dvou bodů (a, b). Zajistěte, že body nemohou být "null".
+
+Vytvořte funkci isOrthogonal(...), která bude zjišťovat, zda jsou dva vektory na sebe kolmé. Funkci dejte vhodnou signaturu, vhodně ji umístěte a proveďte implementaci.
+
+Demonstrujte použití v metodě main().
