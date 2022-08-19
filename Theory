@@ -208,6 +208,16 @@
 					Arrays, Collections – „lepší pole“
 					Vector, Stack, Hashtable, Properties
 					PriorityQueue, ArrayDeque
+					
+					
+	String inputFile = "src/files/spz.txt";
+        Path filePathInput = Paths.get(inputFile);
+
+        if(Files.exists(filePathInput)){
+	//code
+	}
+	else throw new IOException("Input File not found!");
+    	}
 
 
 			   	
