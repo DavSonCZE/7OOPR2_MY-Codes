@@ -1,0 +1,11 @@
+Zadání R:
+------------
+Vytvořte třídu Bag reprezentující množinu slov.
+
+Ve třídě Bag vytvořte metodu add(String word). která do množiny uloží nové slovo. Pokud už exisstuje neuloží se (každé tedy bude v množině pouze jednou), 
+ignorujte malá a velká písmena.
+
+Ve třídě Bag vytvořte metodu save(String fileName), která uloží všechna slova z množiny do textového souboru,
+každé slovo na jeden řádek. V případě chyby metoda vyhodí vyjímku IOException.
+
+Demonstrjte řešení v metodě main vytvořením nového seznamu, vložíme několik slov z uložením na disk.
