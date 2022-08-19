@@ -1,0 +1,5 @@
+Rychlý úkol O
+Vytvořte (ručně) na disku textový soubor s 5 RZ aut, např.: 4T8 2403, 9T9 2019, OVA 2032 ...
+
+Napište program, který načte jednotlivé RZ a vypíše její ciferný součet a seznam neopakujících se cifer, tedy např. pro
+2T4 4468 se vypíše součet 2+4+4+4+6+8 = 28 a cifry 2, 4, 6, 8.
