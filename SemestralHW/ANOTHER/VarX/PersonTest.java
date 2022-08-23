@@ -17,7 +17,7 @@ public class PersonTest {
 
         List<String> expectedEmails = Arrays.asList("abraham@s.cz", "david@seznam.cz", "zofie@a.cz");
         List<String> actualEmails = p1.getEmails();
-        Assert.assertEquals(actualEmails, expectedEmails);
+        Assert.assertEquals(expectedEmails, actualEmails);
     }
 
 
