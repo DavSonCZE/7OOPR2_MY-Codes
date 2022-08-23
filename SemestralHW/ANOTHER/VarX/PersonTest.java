@@ -19,6 +19,5 @@ public class PersonTest {
         List<String> actualEmails = p1.getEmails();
         Assert.assertEquals(expectedEmails, actualEmails);
     }
-
-
+    
 }
